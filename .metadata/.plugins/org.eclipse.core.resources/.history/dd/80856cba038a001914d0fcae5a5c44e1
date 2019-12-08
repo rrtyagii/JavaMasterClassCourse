@@ -1,0 +1,83 @@
+package dontThinkTooMuch;
+
+import java.util.Collection;
+import java.util.Map;
+import java.util.Set;
+import java.util.HashMap;
+
+public class Locations implements Map<Integer, Anything> {
+	
+	 private static Map<Integer, Anything> locations=new HashMap<Integer, Anything>();
+	
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return locations.size();
+	}
+	
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return locations.isEmpty();
+	}
+	
+	@Override
+	public boolean containsKey(Object key) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	@Override
+	public boolean containsValue(Object value) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	@Override
+	public Anything get(Object key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public Anything put(Integer key, Anything value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public Anything remove(Object key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public void putAll(Map<? extends Integer, ? extends Anything> m) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public Set<Integer> keySet() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public Collection<Anything> values() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public Set<Entry<Integer, Anything>> entrySet() {
+		// TODO Auto-generated method stub
+		return null;
+	}   
+}

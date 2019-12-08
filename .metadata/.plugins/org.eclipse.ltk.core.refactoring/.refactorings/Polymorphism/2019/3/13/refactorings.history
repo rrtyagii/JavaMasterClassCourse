@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Use super type &apos;com.Car&apos; instead of &apos;com.Maruti&apos;&#x0D;&#x0A;- Original project: &apos;Polymorphism&apos;&#x0D;&#x0A;- Original element: &apos;com.Maruti&apos;&#x0D;&#x0A;- Super type: &apos;com.Car&apos;" description="Use super type &apos;Car&apos;" element1="/src&lt;com{PolymorphismPart1andPart2.java[Car" flags="589830" id="org.eclipse.jdt.ui.use.supertype" input="/src&lt;com{PolymorphismPart1andPart2.java[Maruti" instanceof="false" stamp="1553808315217" version="1.0"/>
+</session>

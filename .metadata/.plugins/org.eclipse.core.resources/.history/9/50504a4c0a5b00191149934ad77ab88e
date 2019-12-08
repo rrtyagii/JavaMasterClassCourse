@@ -1,0 +1,8 @@
+package com;
+import java.util.*; 
+public class Contacts {
+   private static Scanner scan=new Scanner (System.in); 
+    private String name; 
+    private int number; 
+	 
+}

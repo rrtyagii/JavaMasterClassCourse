@@ -1,0 +1,1 @@
+0 , You are sitting in events service office.1 , You are standing on 33rd street near the red building.2 , You are at the MTCC.3 , You are inside the hermann hall.4 , You are going to the Keating Building.5 , You are going from IIT Tower to Stuart Building and back.

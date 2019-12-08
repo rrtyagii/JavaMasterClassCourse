@@ -1,0 +1,17 @@
+package rishabhtyagi123;
+
+public class WhiteSPACEIdenting {
+	
+	public static void main (String args[]) {
+		int myvariable=50 ;  // "my variable=50" is an expression
+		//the entire line " int my variable = 50 ; " is a statement
+		
+		myvariable++ ; 
+		System.out.println(myvariable);
+		
+		myvariable-- ; 
+		 
+		System.out.println(myvariable);
+	 	
+	}
+}

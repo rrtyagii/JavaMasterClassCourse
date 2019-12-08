@@ -1,0 +1,75 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Spinner?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button text="Click me" GridPane.rowIndex="0" GridPane.columnIndex="0">
+  </Button>
+    <Label GridPane.columnIndex="1" GridPane.rowIndex="0" text="This is a label"
+      textFill="blue" >
+        <font>
+            <Font name="Arial italic BOLD" size="12"/>
+        </font>
+    </Label>
+    <fx:define>
+        <ToggleGroup fx:id="ColourToggleGroup"/>
+    </fx:define>
+    <RadioButton GridPane.columnIndex="5" GridPane.rowIndex="2" text="RED" toggleGroup="$ColourToggleGroup"/>
+    <RadioButton GridPane.columnIndex="6" GridPane.rowIndex="2" text="BLUE" selected="true" toggleGroup="$ColourToggleGroup"/>
+    <RadioButton GridPane.columnIndex="4" GridPane.rowIndex="2" text="WHITE" toggleGroup="$ColourToggleGroup"/>
+
+    <VBox GridPane.columnIndex="8" GridPane.rowIndex="8">
+    <CheckBox GridPane.columnIndex="5" GridPane.rowIndex="3" text="RED"
+            indeterminate="true"/>
+    <CheckBox GridPane.columnIndex="6" GridPane.rowIndex="3" text="BLUE"
+              indeterminate="true"  />
+    <CheckBox GridPane.columnIndex="4" GridPane.rowIndex="3" text="WHITE"
+              indeterminate="true"/>
+    </VBox>
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <PasswordField GridPane.rowIndex="1" GridPane.columnIndex="1" />
+    <ComboBox GridPane.rowIndex="1" GridPane.columnIndex="3" GridPane.columnSpan="2">
+               <items>
+                   <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Option 1 "/>
+                       <String fx:value="Option 2 "/>
+                       <String fx:value="Option 3 "/>
+                       <String fx:value="Option 4 "/>
+                       <String fx:value="Option 5 "/>
+
+                   </FXCollections>
+               </items>
+        <value>
+            <String fx:value="This is option 4 which is trying to be the default"/>
+        </value>
+    </ComboBox>
+    <ChoiceBox GridPane.rowIndex="0" GridPane.columnIndex="5">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="cb 1"/>
+                <String fx:value="Option 1 "/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Spinner GridPane.rowIndex="2" GridPane.columnIndex="4" min="0" max="100" editable="true">
+
+    </Spinner>
+</GridPane>

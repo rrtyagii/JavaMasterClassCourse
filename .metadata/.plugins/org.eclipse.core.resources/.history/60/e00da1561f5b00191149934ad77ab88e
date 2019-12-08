@@ -1,0 +1,49 @@
+package com;
+import java.util.*; 
+public class Main {
+	private static Scanner scan=new Scanner (System.in); 
+	private static MobilePhone mobilePhone=new MobilePhone("773 733 6517"); 
+	
+	public static void main(String[] args) {
+	
+		boolean quit = false; 
+		startPhone(); 
+		printAction(); 
+		while(!quit) {
+			System.out.println("\nEnter action: (6 to show available actions)");
+			int action = scan.nextInt(); 
+			scan.nextLine(); 
+			
+			switch(action) {
+			case 6: 
+				System.out.println("\nSHUTTING DOWN");
+				quit=true; 
+				break; 
+			case 0:
+				printAction();
+				break; 
+			}
+		}
+		
+	}
+	private static void printContacts() {
+		
+	}
+	private static void  startPhone( ){
+		System.out.println("Starting PHone....");
+	}
+	private static void printAction() {
+		System.out.println("\n Available Action:  \nPRESS");
+	    System.out.println("\t 0 - TO PRINT THE AVAILABLE ACTIONS. ");
+	    System.out.println("\t 1 - TO PRINT CONTACT LIST.");
+	    System.out.println("\t 2 - TO ADD A CONTACT IN LIST ");
+	    System.out.println("\t 3 - TO UPDATE A CONTACT FROM THE LIST. ");
+	    System.out.println("\t 4 - TO REMOVE THE CONTACT FROM THE LIST. ");
+	    System.out.println("\t 5 - TO SEARCH FOR A CONTACT IN THE LIST");
+	    System.out.println("\t 6 - TO SHUTDOWN");
+	    
+	    System.out.println("Choose your actions\n");
+	}
+	
+
+}

@@ -1,0 +1,10 @@
+package com;
+import java.util.*; 
+public class Main {
+	private static Scanner scan=new Scanner (System.in); 
+	private static MobilePhone mobilePhone=
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ArrayListChallenge/src/com/MobilePhoneContacts.java&apos; to &apos;MobilePhone.java&apos;" description="Rename resource &apos;MobilePhoneContacts.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/MobilePhoneContacts.java" name="MobilePhone.java" stamp="1554842400787" updateReferences="true"/>
+</session>

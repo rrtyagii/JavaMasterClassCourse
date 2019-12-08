@@ -1,0 +1,47 @@
+package numbahPalindrome;
+
+
+
+  public class NumberPalindrome {
+	   public static void main(String[] args) 
+	   {
+		boolean result=isPalindrome(-1221); 
+		System.out.println(result);
+	    System.out.println("This is just a test output");
+	   }
+	public static boolean isPalindrome ( int number) {
+	  int reverse=0;
+	    if(number==0) {
+	    	System.out.println("Enter the number other than 0");
+	    	return false; 
+	    }
+	    
+	    else {
+	         while(number!=0) {
+	    		int lastDigit=number%10;
+	    		reverse++ ;  
+	    		reverse=reverse*10;    	
+	    	    reverse+=lastDigit ;
+	    	    lastDigit/=10; 
+                            }
+	    	System.out.println("the reverse number = " + reverse );
+	    	System.out.println("The original number was " + number);
+
+	    	if(reverse==number) {
+	    		System.out.println("The number is palindrome");
+	    		return true; 
+	    	                    }
+	    	
+	    	else {
+	    		System.out.println("The number is not palindrome");
+	    		return false; 
+	    	     }
+	    	
+	       }
+		
+		
+    	}
+	
+	
+
+   }
